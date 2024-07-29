@@ -14,11 +14,17 @@ struct ContentView: View {
     struct Props {
         let counter: Int
         let onIncrement: () -> Void
+        let onDecrement: () -> Void
+        let onAdd: (Int) -> Void
     }
 
     private func map(state: State) -> Props {
         return Props(counter: state.counter) {
             store.dispatch(action: IncrementAction())
+        } onDecrement: {
+            store.dispatch(action: DecrementAction())
+        } onAdd: { addValue in
+            store.dispatch(action: AddAction(value: addValue))
         }
     }
 
@@ -31,6 +37,12 @@ struct ContentView: View {
 
             Button("Increment") {
                 props.onIncrement()
+            }
+            Button("Decrement") {
+                props.onDecrement()
+            }
+            Button("Add") {
+                props.onAdd(100)
             }
         }
         .padding()
