@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @EnvironmentObject var store: Store
+    @EnvironmentObject var store: Store<AppState>
 
     struct Props {
         let counter: Int
@@ -18,7 +18,7 @@ struct ContentView: View {
         let onAdd: (Int) -> Void
     }
 
-    private func map(state: State) -> Props {
+    private func map(state: CounterState) -> Props {
         return Props(counter: state.counter) {
             store.dispatch(action: IncrementAction())
         } onDecrement: {
@@ -30,11 +30,9 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            let props = map(state: store.state)
-
+            let props = map(state: store.state.counterState)
             Text("\(props.counter)")
                 .padding()
-
             Button("Increment") {
                 props.onIncrement()
             }
@@ -50,6 +48,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    let store = Store(reducer: reducer)
+    let store = Store(reducer: appReducer(_:_:), state: AppState(counterState: CounterState(counter: 0)))
     ContentView().environmentObject(store)
 }

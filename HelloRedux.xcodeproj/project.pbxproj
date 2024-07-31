@@ -12,6 +12,10 @@
 		BF11EF682C57685D00CF5E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF11EF612C57685D00CF5E88 /* Assets.xcassets */; };
 		BF11EF6B2C57686F00CF5E88 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF11EF6A2C57686F00CF5E88 /* Store.swift */; };
 		BF11EF6F2C576AB100CF5E88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF11EF6C2C576AB100CF5E88 /* Preview Assets.xcassets */; };
+		BF11EF722C5783C000CF5E88 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF11EF712C5783C000CF5E88 /* CounterReducer.swift */; };
+		BF19EFF92C5A127E00FEC193 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19EFF82C5A127E00FEC193 /* CounterState.swift */; };
+		BF19EFFB2C5A12FC00FEC193 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19EFFA2C5A12FC00FEC193 /* Action.swift */; };
+		BF19EFFD2C5A149300FEC193 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19EFFC2C5A149300FEC193 /* AppReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		BF11EF632C57685D00CF5E88 /* HelloReduxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloReduxApp.swift; sourceTree = "<group>"; };
 		BF11EF6A2C57686F00CF5E88 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		BF11EF6C2C576AB100CF5E88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF11EF712C5783C000CF5E88 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		BF19EFF82C5A127E00FEC193 /* CounterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
+		BF19EFFA2C5A12FC00FEC193 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		BF19EFFC2C5A149300FEC193 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -107,7 +115,10 @@
 		BF11EF692C57686500CF5E88 /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				BF11EF6A2C57686F00CF5E88 /* Store.swift */,
+				BF19F0002C5A1DF500FEC193 /* State */,
+				BF19EFFF2C5A1DEB00FEC193 /* Action */,
+				BF19EFFE2C5A1DE300FEC193 /* Store */,
+				BF11EF702C5783AB00CF5E88 /* Reducers */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -126,6 +137,39 @@
 				BF11EF6D2C576AB100CF5E88 /* Preview Content */,
 			);
 			path = HelloRedux;
+			sourceTree = "<group>";
+		};
+		BF11EF702C5783AB00CF5E88 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				BF19EFFC2C5A149300FEC193 /* AppReducer.swift */,
+				BF11EF712C5783C000CF5E88 /* CounterReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		BF19EFFE2C5A1DE300FEC193 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				BF11EF6A2C57686F00CF5E88 /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		BF19EFFF2C5A1DEB00FEC193 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				BF19EFFA2C5A12FC00FEC193 /* Action.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		BF19F0002C5A1DF500FEC193 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				BF19EFF82C5A127E00FEC193 /* CounterState.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF11EF652C57685D00CF5E88 /* ContentView.swift in Sources */,
+				BF19EFFB2C5A12FC00FEC193 /* Action.swift in Sources */,
+				BF19EFFD2C5A149300FEC193 /* AppReducer.swift in Sources */,
+				BF11EF722C5783C000CF5E88 /* CounterReducer.swift in Sources */,
 				BF11EF662C57685D00CF5E88 /* HelloReduxApp.swift in Sources */,
+				BF19EFF92C5A127E00FEC193 /* CounterState.swift in Sources */,
 				BF11EF6B2C57686F00CF5E88 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
