@@ -16,6 +16,7 @@
 		BF19EFF92C5A127E00FEC193 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19EFF82C5A127E00FEC193 /* CounterState.swift */; };
 		BF19EFFB2C5A12FC00FEC193 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19EFFA2C5A12FC00FEC193 /* Action.swift */; };
 		BF19EFFD2C5A149300FEC193 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19EFFC2C5A149300FEC193 /* AppReducer.swift */; };
+		BFDD98202C5B6B5100D49CCF /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDD981F2C5B6B5100D49CCF /* AddTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		BF19EFF82C5A127E00FEC193 /* CounterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
 		BF19EFFA2C5A12FC00FEC193 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		BF19EFFC2C5A149300FEC193 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		BFDD981F2C5B6B5100D49CCF /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -107,6 +109,7 @@
 				BF11EF692C57686500CF5E88 /* Store */,
 				BF11EF632C57685D00CF5E88 /* HelloReduxApp.swift */,
 				BF11EF622C57685D00CF5E88 /* ContentView.swift */,
+				BFDD981F2C5B6B5100D49CCF /* AddTaskView.swift */,
 				BF11EF612C57685D00CF5E88 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -317,6 +320,7 @@
 				BF11EF652C57685D00CF5E88 /* ContentView.swift in Sources */,
 				BF19EFFB2C5A12FC00FEC193 /* Action.swift in Sources */,
 				BF19EFFD2C5A149300FEC193 /* AppReducer.swift in Sources */,
+				BFDD98202C5B6B5100D49CCF /* AddTaskView.swift in Sources */,
 				BF11EF722C5783C000CF5E88 /* CounterReducer.swift in Sources */,
 				BF11EF662C57685D00CF5E88 /* HelloReduxApp.swift in Sources */,
 				BF19EFF92C5A127E00FEC193 /* CounterState.swift in Sources */,

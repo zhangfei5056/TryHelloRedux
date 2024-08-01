@@ -15,4 +15,5 @@ struct CounterState: ReduxState {
 
 struct AppState: ReduxState {
     var counterState: CounterState
+    var taskState: TaskState
 }
