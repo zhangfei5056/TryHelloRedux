@@ -17,6 +17,7 @@
 		BF19EFFB2C5A12FC00FEC193 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19EFFA2C5A12FC00FEC193 /* Action.swift */; };
 		BF19EFFD2C5A149300FEC193 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19EFFC2C5A149300FEC193 /* AppReducer.swift */; };
 		BF287D1C2C69FF3A003E02BB /* LogMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF287D1B2C69FF3A003E02BB /* LogMiddleware.swift */; };
+		BF287D242C6A0066003E02BB /* IncrementMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF287D232C6A0066003E02BB /* IncrementMiddleware.swift */; };
 		BFDD98202C5B6B5100D49CCF /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDD981F2C5B6B5100D49CCF /* AddTaskView.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		BF19EFFA2C5A12FC00FEC193 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		BF19EFFC2C5A149300FEC193 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		BF287D1B2C69FF3A003E02BB /* LogMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMiddleware.swift; sourceTree = "<group>"; };
+		BF287D232C6A0066003E02BB /* IncrementMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementMiddleware.swift; sourceTree = "<group>"; };
 		BFDD981F2C5B6B5100D49CCF /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				BF287D1B2C69FF3A003E02BB /* LogMiddleware.swift */,
+				BF287D232C6A0066003E02BB /* IncrementMiddleware.swift */,
 			);
 			path = MiddleWares;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				BF19EFFD2C5A149300FEC193 /* AppReducer.swift in Sources */,
 				BFDD98202C5B6B5100D49CCF /* AddTaskView.swift in Sources */,
 				BF11EF722C5783C000CF5E88 /* CounterReducer.swift in Sources */,
+				BF287D242C6A0066003E02BB /* IncrementMiddleware.swift in Sources */,
 				BF11EF662C57685D00CF5E88 /* HelloReduxApp.swift in Sources */,
 				BF19EFF92C5A127E00FEC193 /* CounterState.swift in Sources */,
 				BF11EF6B2C57686F00CF5E88 /* Store.swift in Sources */,

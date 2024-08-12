@@ -17,6 +17,7 @@ struct ContentView: View {
         let onIncrement: () -> Void
         let onDecrement: () -> Void
         let onAdd: (Int) -> Void
+        let onIncrementAsync: () -> Void
     }
 
     private func map(state: CounterState) -> Props {
@@ -26,6 +27,8 @@ struct ContentView: View {
             store.dispatch(action: DecrementAction())
         } onAdd: { addValue in
             store.dispatch(action: AddAction(value: addValue))
+        } onIncrementAsync: {
+            store.dispatch(action: IncrementActionAsync())
         }
     }
 
@@ -42,6 +45,9 @@ struct ContentView: View {
             }
             Button("Add") {
                 props.onAdd(100)
+            }
+            Button("Increment Async") {
+                props.onIncrementAsync()
             }
             Spacer()
             Button("Add Task") {

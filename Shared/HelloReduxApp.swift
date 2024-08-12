@@ -31,7 +31,10 @@ struct HelloReduxApp: App {
         let store = Store(
             reducer: appReducer(_:_:),
             state: AppState(counterState: CounterState(counter: 0), taskState: TaskState(tasks: [])),
-            middlewares: [logMiddleware()]
+            middlewares: [
+                logMiddleware(),
+                incrementMiddleware()
+            ]
         )
         WindowGroup {
             ContentView().environmentObject(store)
