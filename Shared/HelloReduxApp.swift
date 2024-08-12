@@ -28,7 +28,11 @@ import SwiftUI
 @main
 struct HelloReduxApp: App {
     var body: some Scene {
-        let store = Store(reducer: appReducer(_:_:), state: AppState(counterState: CounterState(counter: 0), taskState: TaskState(tasks: [])))
+        let store = Store(
+            reducer: appReducer(_:_:),
+            state: AppState(counterState: CounterState(counter: 0), taskState: TaskState(tasks: [])),
+            middlewares: [logMiddleware()]
+        )
         WindowGroup {
             ContentView().environmentObject(store)
         }
