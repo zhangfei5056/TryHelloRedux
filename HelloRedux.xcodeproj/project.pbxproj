@@ -110,16 +110,14 @@
 		BF11EF642C57685D00CF5E88 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BF11EF692C57686500CF5E88 /* Store */,
-				BF11EF632C57685D00CF5E88 /* HelloReduxApp.swift */,
-				BF11EF622C57685D00CF5E88 /* ContentView.swift */,
-				BFDD981F2C5B6B5100D49CCF /* AddTaskView.swift */,
+				BF15AFC82D003DD000217B0E /* View */,
+				BF11EF692C57686500CF5E88 /* Redux */,
 				BF11EF612C57685D00CF5E88 /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		BF11EF692C57686500CF5E88 /* Store */ = {
+		BF11EF692C57686500CF5E88 /* Redux */ = {
 			isa = PBXGroup;
 			children = (
 				BF287D1A2C69FF21003E02BB /* MiddleWares */,
@@ -128,7 +126,7 @@
 				BF19EFFE2C5A1DE300FEC193 /* Store */,
 				BF11EF702C5783AB00CF5E88 /* Reducers */,
 			);
-			path = Store;
+			path = Redux;
 			sourceTree = "<group>";
 		};
 		BF11EF6D2C576AB100CF5E88 /* Preview Content */ = {
@@ -154,6 +152,16 @@
 				BF11EF712C5783C000CF5E88 /* CounterReducer.swift */,
 			);
 			path = Reducers;
+			sourceTree = "<group>";
+		};
+		BF15AFC82D003DD000217B0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF11EF632C57685D00CF5E88 /* HelloReduxApp.swift */,
+				BF11EF622C57685D00CF5E88 /* ContentView.swift */,
+				BFDD981F2C5B6B5100D49CCF /* AddTaskView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BF19EFFE2C5A1DE300FEC193 /* Store */ = {

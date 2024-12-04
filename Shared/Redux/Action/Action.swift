@@ -10,10 +10,11 @@ import Foundation
 protocol Action {}
 
 struct IncrementAction: Action {}
+
 struct DecrementAction: Action {}
+
 struct AddAction: Action {
     let value: Int
 }
-
 
 struct IncrementActionAsync: Action {}

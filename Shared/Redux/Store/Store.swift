@@ -25,9 +25,9 @@ class Store<State: ReduxState>: ObservableObject {
         self.middlewares = middlewares
     }
 
-//    func dispatch(action: Action) {
-//        self.state = reducer(self.state, action)
-//    }
+    //    func dispatch(action: Action) {
+    //        self.state = reducer(self.state, action)
+    //    }
 
     func dispatch(action: Action) {
         DispatchQueue.main.async {
@@ -39,5 +39,5 @@ class Store<State: ReduxState>: ObservableObject {
             middleware(state, action, dispatch)
         }
     }
-    }
+}
 
